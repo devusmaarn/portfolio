@@ -1,0 +1,6 @@
+/.venv
+/api/**/__pycache__
+/web/.next/
+/web/node_modules
+/web/build
+**.env*.local
