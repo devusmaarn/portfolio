@@ -1,8 +1,13 @@
-from flask import render_template, redirect, request
+from flask import render_template, redirect, request, Blueprint
 
+
+bp = Blueprint('app', __name__)
+
+@bp.route('/')
 def home():
-    pass
+    return 'Hello World'
 
+ 
 def loginPage():
     pass
 

@@ -10,5 +10,5 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD sh -c "flask run --host 0.0.0.0"
+CMD sh -c "flask run --host 0.0.0.0 --debug"
 
