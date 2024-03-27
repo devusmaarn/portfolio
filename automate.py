@@ -1,16 +1,16 @@
 import os
 import time
+from uuid import uuid4
+from datetime import datetime
 
 while True:
     print('adding changes to commit....')
     os.system('git add .')
 
-    message = input('enter commit message: ')
-    print('commiting changes....')
+    message = f'{datetime.now()} - {uuid4()}'
     os.system(f'git commit -m "{message}"')
 
-    print('pushing changes to remote ...')
     os.system('git push')
-    print("new changes pushed.")
+    print(f"{message} pushed.")
 
-    time.sleep(10)
+    time.sleep(60 * 10)
