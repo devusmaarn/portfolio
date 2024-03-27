@@ -5,7 +5,7 @@ bp = Blueprint('app', __name__)
 
 @bp.route('/')
 def home():
-    return 'Hello World'
+    return render_template('home.html')
 
  
 def loginPage():
