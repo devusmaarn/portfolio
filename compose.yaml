@@ -2,12 +2,12 @@ name: 'porfolio'
 
 services:
   app:
-    build:.
+    build: .
     restart: always
     volumes:
       - .:/src/app
     ports:
-      - .:/src/app
+      - 9001:5000
     depends_on:
       - db
 
